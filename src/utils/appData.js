@@ -1,18 +1,27 @@
 // import { email } from "zod";
 import { useNavigate } from "react-router-dom";
-
+import image1 from '../assets/images/pexels-alfomedeiros-11534117.jpg'
+import image2 from '../assets/images/pexels-shvetsa-5029853.jpg'
+import image3 from '../assets/images/pexels-shvetsa-5029923.jpg'
+import image4 from '../assets/images/pexels-mike-mijares-78163062-33651991.jpg'
+import image5 from '../assets/images/pexels-frostee-lens-ug-2150016714-35744764.jpg'
+import image6 from '../assets/images/pexels-farrow-photography-2153739185-33062143.jpg'
+import image7 from '../assets/images/pexels-rdne-6646882.jpg'
+import image8 from '../assets/images/pexels-esmat-sediqi-227884109-25600494.jpg'
+import image9 from '../assets/images/pexels-balazsimon-6873614.jpg'
+import image10 from '../assets/images/pexels-bilbaojl-4231781.jpg'
 
 export const sliderImages = [
-    {url:'../src/assets/images/pexels-alfomedeiros-11534117.jpg',
+    {   url:image1,
         title:'victor',
         description:'photo1'
     },
-    {url:'../assets/images/pexels-shvetsa-5029853.jpg',
+    {   url:image2,
         title:'Tree Planting',
         description:'photo2'
 
     },
-    {url:'../assets/images/pexels-shvetsa-5029923.jpg',
+    {   url:image3,
         title:'Togetherness',
         description:'photo3'
 
@@ -33,7 +42,7 @@ export const blogData = [
     excerpt:
       "Young people are driving meaningful change in their communities by creating innovative solutions to local challenges. This article explores inspiring success stories and lessons learned from grassroots initiatives.",
     blogImgLink:
-      "../../src/assets/images/pexels-frostee-lens-ug-2150016714-35744764.jpg",
+      image5,
     postDate: "Mon, June 17, 2026",
     blogPostLink: "",
 
@@ -45,7 +54,7 @@ export const blogData = [
     excerpt:
       "Digital platforms have become powerful tools for advocacy, collaboration, and awareness. Discover how young leaders are using technology to influence policy and create lasting social impact.",
     blogImgLink:
-      "../../src/assets/images/pexels-farrow-photography-2153739185-33062143.jpg",
+      image7,
     postDate: "Wed, July 2, 2026",
     blogPostLink: "",
   },
@@ -56,7 +65,7 @@ export const blogData = [
     excerpt:
       "Creating inclusive environments enables young people from diverse backgrounds to develop leadership skills, share ideas, and contribute confidently to community development initiatives.",
     blogImgLink:
-      "../../src/assets/images/pexels-esmat-sediqi-227884109-25600494.jpg",
+      image8,
     postDate: "Fri, August 14, 2026",
     blogPostLink: "",
   },
@@ -67,7 +76,7 @@ export const blogData = [
     excerpt:
       "Behind every successful community project are dedicated volunteers whose passion fuels progress. Read about the experiences and impact of volunteers making a difference every day.",
     blogImgLink:
-      "../../src/assets/images/pexels-bilbaojl-4231781.jpg",
+      image10,
     postDate: "Tue, September 8, 2026",
     blogPostLink: "",
   },
@@ -78,7 +87,7 @@ export const blogData = [
     excerpt:
       "Strong partnerships between organizations, volunteers, and local communities create sustainable solutions. Learn how collaboration strengthens projects and maximizes long-term impact.",
     blogImgLink:
-      "../../src/assets/images/pexels-balazsimon-6873614.jpg",
+      image9,
     postDate: "Sat, October 3, 2026",
     blogPostLink: "",
   },
@@ -89,7 +98,7 @@ export const blogData = [
     excerpt:
       "Across different regions, young environmental advocates are launching initiatives that promote sustainability, conservation, and climate awareness while inspiring others to get involved.",
     blogImgLink:
-      "../../src/assets/images/pexels-frostee-lens-ug-2150016714-35744764.jpg",
+      image5,
     postDate: "Thu, November 19, 2026",
     blogPostLink: "",
   },
@@ -440,19 +449,19 @@ export const latestPost = () =>{
     onClick:()=>navigate('/blog'),
     postTitle:'Five Ways Technology is Transforming Youth Advocacy',
     postType:'Post', 
-    imgSrc:'../src/assets/images/pexels-mike-mijares-78163062-33651991.jpg'
+    imgSrc:image4
   },
   {
     onClick:()=>navigate('/blog'),
     postTitle:'Empowering Young People Through Community Innovation',
     postType:'Blog', 
-    imgSrc:'../src/assets/images/pexels-frostee-lens-ug-2150016714-35744764.jpg'
+    imgSrc:image5
   },
   {
     onClick:()=>navigate('/blog'),
     postTitle:'Building Inclusive Spaces for Future Leaders',
     postType:'Blog', 
-    imgSrc:'../src/assets/images/pexels-rdne-6646882.jpg'
+    imgSrc:image7
   }
 ])
 }
