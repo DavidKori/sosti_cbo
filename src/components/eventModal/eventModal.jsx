@@ -3,6 +3,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { currentPage } from '../../context/pageContext';
 import { usePage } from '../../context/pageContext';
+import image1 from '../src/assets/imgaes/pexels-balazsimon-6873614.jpg'
+import image2 from '../src/assets/images/pexels-bilbaojl-4231781.jpg'
+import image3 from '../src/assets/images/pexels-esmat-sediqi-227884109-25600494.jpg'
+                    
 const EventModal =({
     eventStatus='attended',
     date = new Date().toDateString(),
@@ -65,17 +69,17 @@ const EventModal =({
                      )
                 })} */}
 				<div className="icon">
-					<img src="../src/assets/images/pexels-balazsimon-6873614.jpg" 
+					<img src={image1} 
                     alt="" 
                     title=""/>
 				</div>
 				<div className="icon">
-					<img src="../src/assets/images/pexels-balazsimon-6873614.jpg" 
+					<img src={image2} 
                     alt="" 
                     title=""/>
 				</div>
 				<div className="icon">
-					<img src="../src/assets/images/pexels-balazsimon-6873614.jpg" 
+					<img src={image3} 
                     alt="" 
                     title=""/>
 				</div>
