@@ -3,16 +3,16 @@ import { useNavigate } from "react-router-dom";
 
 
 export const sliderImages = [
-    {url:'../../src/assets/images/pexels-alfomedeiros-11534117.jpg',
+    {url:'../src/assets/images/pexels-alfomedeiros-11534117.jpg',
         title:'victor',
         description:'photo1'
     },
-    {url:'../../src/assets/images/pexels-shvetsa-5029853.jpg',
+    {url:'../assets/images/pexels-shvetsa-5029853.jpg',
         title:'Tree Planting',
         description:'photo2'
 
     },
-    {url:'../../src/assets/images/pexels-shvetsa-5029923.jpg',
+    {url:'../assets/images/pexels-shvetsa-5029923.jpg',
         title:'Togetherness',
         description:'photo3'
 
@@ -440,19 +440,19 @@ export const latestPost = () =>{
     onClick:()=>navigate('/blog'),
     postTitle:'Five Ways Technology is Transforming Youth Advocacy',
     postType:'Post', 
-    imgSrc:'./src/assets/images/pexels-mike-mijares-78163062-33651991.jpg'
+    imgSrc:'../src/assets/images/pexels-mike-mijares-78163062-33651991.jpg'
   },
   {
     onClick:()=>navigate('/blog'),
     postTitle:'Empowering Young People Through Community Innovation',
     postType:'Blog', 
-    imgSrc:'./src/assets/images/pexels-frostee-lens-ug-2150016714-35744764.jpg'
+    imgSrc:'../src/assets/images/pexels-frostee-lens-ug-2150016714-35744764.jpg'
   },
   {
     onClick:()=>navigate('/blog'),
     postTitle:'Building Inclusive Spaces for Future Leaders',
     postType:'Blog', 
-    imgSrc:'./src/assets/images/pexels-rdne-6646882.jpg'
+    imgSrc:'../src/assets/images/pexels-rdne-6646882.jpg'
   }
 ])
 }
