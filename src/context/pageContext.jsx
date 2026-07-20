@@ -21,5 +21,5 @@ export function usePage () {
 }
 
 export function currentPage () {
-    return window.location.href.toString().split(['//'],2)[1].split('/')[2]
+    return window.location.hash.split('/')[1];
 }

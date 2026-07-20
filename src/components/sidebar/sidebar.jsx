@@ -4,7 +4,7 @@ import { useMenu } from '../../context/menuContext';
 import { usePage } from '../../context/pageContext';
 import {Link} from 'react-router-dom';
 import {FiPhone,FiPlus,FiInstagram,FiFacebook,FiTwitter,FiLinkedin,FiX} from 'react-icons/fi'
-
+import { currentPage } from '../../context/pageContext';
 const Sidebar = ({
     phoneNumber,
     linkedinLink,
@@ -14,11 +14,13 @@ const Sidebar = ({
     showMobile,
 }) => {
     const {pageName, setPageName} = usePage();
-    setPageName(window.location.href.toString().split(['//'],2)[1].split('/')[2])
-
-    // useEffect(()=> {
-    //    setPageName(window.location.href.toString().split(['//'],2)[1].split('/')[2])
-    // })
+    // setPageName(window.location.href.toString().split(['//'],2)[1].split('/')[2])
+    // setPageName(window.location.hash.split('/')[1] )
+    
+   
+        setPageName(currentPage)
+        //    setPageName(window.location.href.toString().split(['//'],2)[1].split('/')[2])
+    
     // console.log(pageName)
     const {showMenu, setShowMenu}= useMenu();
     

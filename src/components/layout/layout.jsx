@@ -10,8 +10,11 @@ const Layout = ({ children }) => {
   const {pageName, setPageName} = usePage();
   const {showMenu, setShowMenu} = useMenu()
   
-  setPageName(window.location.href.toString().split(['//'],2)[1].split('/')[2]);
-  
+  // setPageName(window.location.href.toString().split(['//'],2)[1].split('/')[2]);
+   useEffect(() => {
+    setPageName(window.location.hash.split("/")[1]);
+  }, []);
+
     useEffect(()=> {
       pageName=='home'? setShowContact(true):setShowContact(false);
       }

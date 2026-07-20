@@ -57,7 +57,7 @@ const Header = ({
 				<div className="navigation">
 					<div id='menu-hedera' className="menu">
                         <nav>
-                        <ul id="menu-header-1" className="menu" onClick={()=>setPageName(window.location.href.toString().split(['//'],2)[1].split('/')[2])}>
+                        <ul id="menu-header-1" className="menu" onClick={()=>setPageName(currentPage)}>
                             <li className={`menu-item ${ pageName == 'home'?'current-menu-item':''}`} >
                                 <Link to="/home" >Home</Link>
                             </li>
