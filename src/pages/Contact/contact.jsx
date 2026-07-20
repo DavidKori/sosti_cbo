@@ -146,7 +146,7 @@ const ContactPage = () => {
                                 </div>
                             </div>
                             <div className='form-footer form_footer top_label'> 
-                                <input type='clear' className='form_button button' maxLength='5' minLength={'5'}   defaultValue='Clear' onClick={handleClear} />
+                                <input type='button' className='form_button button' maxLength='5' minLength={'5'}   defaultValue='Clear' onClick={handleClear} />
                                 <input type='submit' id='form_submit_button_14' 
                                 className='form_button button' onClick={handleSubmit} 
                                  defaultValue='Submit' 
