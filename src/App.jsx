@@ -18,7 +18,7 @@ import ContactPage from './pages/Contact/contact';
 import Events from './pages/Events/event.jsx';
 import Blogs from './pages/Blog/blogs.jsx';
 import About from './pages/About/about.jsx';
-
+import ScrollToTop from './utils/scrollToTop';
 function App() {
 
   return (
@@ -28,6 +28,7 @@ function App() {
         
         <PageProvider>
           <MenuProvider>
+            <ScrollToTop/>
             <Layout>
               <Routes>
                 <Route path="*" element={<Navigate to="/" replace />} />

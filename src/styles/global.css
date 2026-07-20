@@ -17,6 +17,7 @@
     --title:2rem;
     --pale-text:#8f8787;
     --hero-index:10;
+    --highlight-color:rgba(157, 241, 0, 0.507);
 }
 .dark{
 
@@ -46,6 +47,16 @@ html, body {
     height: 100%;
     font-family: var(--primary-font-family);
     overflow-x: hidden;
+}
+html::selection {
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+
+}
+*::selection,
+*::-moz-selection {
+  background-color: #15e90e;
+  color: white;
 }
 @media screen and (min-width:1440px){
     .main-content {
