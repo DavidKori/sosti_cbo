@@ -1,0 +1,110 @@
+ .organisation{
+    box-shadow:0 15px 15px -15px #e5e5e5;
+    margin:37.5px 0 62.5px;
+    padding-bottom:25px;
+    
+}
+.organisation h2 {
+    font-size: var(--title);
+    font-weight: bold;
+    text-align: left;
+}
+.organisation > small {
+    text-align: left;
+    display: block;
+    width: 100%;
+}
+.organisation > p {
+    text-align: left;
+    padding: 5px ;
+   }
+ .organisation .email,
+ .organisation .support-link,
+ .organisation .website{
+    display:inline-block;margin-right:30px
+}
+ .organisation .email i,
+ .organisation .support-link i,
+ .organisation .website i{
+    font-size:16px;margin-left:2px;
+    display: flex;
+}
+ .organisation p{
+    margin:18.75px 0;
+}
+@media only screen and (max-width:990px){
+     .organisation p{margin:6.25px 0}
+}
+ .organisation p.label{
+    margin:12.5px 0 0;padding:12.5px 0 0;
+    border-top:1px solid #e5e5e5;font-size:16px;
+    color: var(--primary-color);
+}
+ .organisation p.value{
+    margin:6.25px 0;
+    font-family:var(--primary-button-font-family);
+    font-size:1.2rem;
+    font-weight: bold;
+    line-height:26px;
+    color: var(--primary-color);
+}
+ .organisation .icon{display:inline-block}
+ .organisation .icon img{
+    width:20px;margin:5px 5px 5px 0
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+@media (min-width:768px){
+    .container,
+    .wp-block-image.size-full figcaption{width:750px}
+}
+@media (min-width:992px){
+    .container,
+    .wp-block-image.size-full figcaption{width:970px}
+
+}
+@media (min-width:1200px){
+    .container,
+    .wp-block-image.size-full figcaption{width:1170px}
+}
+.row{margin-left:-15px;margin-right:-15px}
+
+.col-sm-4,
+.col-sm-6,
+.col-xs-12,
+.col-xs-4,
+.col-xs-6{
+    position:relative;
+    min-height:1px;
+    padding-left:15px;
+    padding-right:15px;
+    text-align: left;
+}
+.col,.col-xs-4,
+.col-xs-6{float:left}
+
+.col-xs-12{width:100%}
+
+.col-xs-6{width:50%}
+
+.col-xs-4{width:33.33333333%}
+
+
+@media (min-width:768px){
+    .col,.col-sm-12,
+    .col-sm-4,
+    .col-sm-6{float:left}
+
+    .col-sm-12{width:100%}
+
+    .col-sm-6{width:50%}
+
+    .col-sm-4{width:33.33333333%}
+ }
+

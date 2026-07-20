@@ -1,0 +1,54 @@
+
+
+.search{
+    padding:50px 25px;
+    border-bottom:1px solid #e5e5e5
+}
+@media only screen and (max-width:990px){
+    .search{padding:25px}
+}
+.search > .facetwp-type-autocomplete{
+    position:relative;
+    margin:0 auto;
+    max-width:780px
+}
+@media only screen and (max-width:990px){
+    .search .facetwp-type-autocomplete{
+        max-width:600px;
+        margin:0 auto}
+}
+.search> .facetwp-type-autocomplete> .facetwp-autocomplete{
+    outline:0;
+    -webkit-appearance:none;
+    font-family:BrauerNeue;
+    border-radius:27.5px;
+    width:90%;
+    border:3px solid var(--primary-button-color);
+    padding:12.5px 18.75px;
+    max-width:100%;
+    color:var(--tertiary-color);
+    font-size:25px
+}
+.search .facetwp-type-autocomplete .facetwp-autocomplete::placeholder{
+    color:var(--tertiary-color)
+}
+@media only screen and (max-width:767px){
+    .search .facetwp-type-autocomplete .facetwp-autocomplete{
+        font-size:22px}
+}
+.search .facetwp-type-autocomplete .facetwp-autocomplete-update{
+    position:absolute;
+    -webkit-appearance:none;
+    font-size:25px;
+    font-family:var(--primary-font-family);
+    right:0 !important;
+    bottom: 0;
+    border:0;
+padding:15px 37.5px;
+border-radius:27.5px;
+background:var(--primary-button-color)
+}
+.search .facetwp-type-autocomplete .facetwp-autocomplete-update:hover{
+background-color:var(--primary-button-color);
+cursor:pointer
+}

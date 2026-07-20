@@ -1,0 +1,7 @@
+.map-container {
+    position: relative;
+    width: 100%; 
+    max-width: 900px; 
+    background-color: var(--primary-color);
+    z-index: 1;
+}

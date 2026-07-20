@@ -1,0 +1,172 @@
+.form_wrapper {
+    max-width: 95%;
+    margin: auto;
+}
+
+.form_heading {
+    font-family: var(--primary-font-family);
+    text-align: left;
+}
+.form_heading > .form_title {
+    font-weight: bold;
+    font-size: 2rem;
+    width: 100%;
+    margin: 40px auto 5px;
+    padding: 10px 0px;
+}
+
+.form-body {
+    width: 90%;
+    margin: auto;
+}
+.form_fields {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    gap: 20px;
+}
+.field {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+.field_label {
+    border: none;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: var(--primary-font-family);
+    text-align: left;
+    padding: 0px;
+    margin-bottom: 10px;
+  
+}
+.form-field-label {
+    color: var(--primary-color);
+    font-family: var(--primary-font-family);
+    font-size: medium;
+    margin-bottom: 4px;
+}
+.field_required {
+    color: var(--danger);
+    font-size: small;
+    font-style: italic;
+    font-weight:400;
+}
+.input_complex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+
+  
+    
+}
+
+.form-grid-col {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50%;
+
+}
+.form-grid-col > input {
+    background: var(--secondary-color);
+    height: var(--button-height);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 1rem;
+    border-radius: 2.5px;
+    padding: 0px;
+}
+
+.form-grid-col > input:focus,
+.textarea:focus {
+    border: 2px dotted var(--primary-color);
+    outline: none;
+}
+
+.text-field-label {
+    width: 100%;
+    text-align: left;
+}
+
+.field-type-textarea,
+.field-type-email,
+.field-type-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.field_description {
+    color: var(--primary-color);
+    width: 100%;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.textarea {
+    background-color: var(--secondary-color);
+    width: 100%;
+    outline: none;
+    color: var(--primary-color);
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+    min-height: 200px;
+    font-size: 1rem;
+    font-weight: 500;  
+}
+
+.form_button {
+    background: var(--primary-button-color);
+    color: var(--primary-color);
+    height: var(--button-height);
+    border-radius: var(--button-height);
+    outline: none;
+    border: 2px solid var(--primary-button-color);
+    width: 150px;
+    font-size: 1.2rem;
+    transition: background .4s ease;
+    display: flex;
+    justify-self: flex-start;
+    text-align: center;
+}
+
+.form_button:hover {
+    background-color: var(--button-hover);
+    cursor: pointer;
+
+}
+
+.form-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width:498px) {
+    .form_button, .form-footer,.field-type-textarea,
+    .field-type-email,.field-type-name,
+    .form_fields,.input_complex{
+        flex-wrap: wrap;
+    }
+   .form-grid-col {
+    width: 100%;
+   }
+   .form-footer{
+    gap: 10px;
+    justify-content: right;
+   }
+   .textarea {
+    min-width: 96%;
+    max-width: 96%;
+   }
+   .field_description{
+    font-size: small;
+   }
+}

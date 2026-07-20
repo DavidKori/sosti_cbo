@@ -1,0 +1,26 @@
+button {
+background-color: var(--primary-button-color);
+height: var(--button-height);
+width: 200px;
+padding: 5px;
+color: var(--primary-color);
+border-radius: calc(var(--button-height) * 1/2);
+font-family: var(--primary-button-font-family);
+font-size: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size:25px;border:1px solid var(--primary-button-color);
+display:inline-block;
+text-decoration:none;
+overflow-y: hidden;
+transition: all .3s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--button-hover);
+    color: var(--secondary-color) !important;
+}
+
+
