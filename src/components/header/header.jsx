@@ -48,7 +48,7 @@ const Header = ({
 				<div className="header-left" onClick={() => setPageName(currentPage)}> {/*this line may break the page header layout*/}
                 <div className="logo" >
 						<Link to="/home" className="logo-link" >
-							<h1 style={{backgroundImage:`url(${images.image4})`}}>SOSTI</h1>
+							<h1 style={{backgroundImage:`url(${images.image1})`}}>SOSTI</h1>
 						</Link>
 					</div>
 					<div className="translations">

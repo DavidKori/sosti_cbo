@@ -1,6 +1,6 @@
 import './footer.css'
 import {FiPhone,FiPlus,FiInstagram,FiFacebook,FiTwitter,FiLinkedin,FiX,FiMenu} from 'react-icons/fi'
-import image from '../../assets/images/pexels-shvetsa-5029923.jpg'
+import { images } from '../../utils/appData';
 const Footer = (
     phoneNumber,
     linkedinLink,
@@ -14,7 +14,7 @@ const Footer = (
 				<div className="container">
 					<div className="footer-content">
 						<div className="footer-logo">
-							<img src={image} 
+							<img src={images.image1} 
                             alt="Society for Sustainable Transformative Initiative"/>
 						</div>
 						<div className="footer-social">

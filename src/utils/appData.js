@@ -20,7 +20,7 @@ export const images = {
   imageLogo:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784667516/sostilogo_l1ryss.png`
 }
 export const sliderImages = [
-    {   url:images.image4,
+    {   url:images.image1,
         title:'victor',
         description:'photo1'
     },
@@ -29,7 +29,7 @@ export const sliderImages = [
         description:'photo2'
 
     },
-    {   url:images.image3,
+    {   url:images.image4,
         title:'Togetherness',
         description:'photo3'
 
