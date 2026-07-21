@@ -2,21 +2,22 @@
 import { useNavigate } from "react-router-dom";
 
 export const images = {
-  image1:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636403/pexels-rdne-6646882_wckg8v.jpg`,
-  image2:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636395/pexels-alfomedeiros-11534117_s7tbkt.jpg`,
-  image3:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636400/pexels-shvetsa-5029853_tgtdjj.jpg`,
-  image4:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636403/pexels-shvetsa-5029923_kaj0ot.jpg`,
-  image5:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636402/pexels-seyhmuskino-30582345_mkctr9.jpg`,
-  image6:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636400/pexels-lagosfoodbank-8054617_kecf0p.jpg`,
-  image7:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636397/pexels-balazsimon-6873614_jy9dvy.jpg`,
-  image8:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636398/pexels-najim-kurfi-483155737-17916511_twprzp.jpg`,
-  image9:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636398/pexels-mike-mijares-78163062-33651991_x7zfhc.jpg`,
-  image10:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636398/pexels-frostee-lens-ug-2150016714-35744764_cq172s.jpg`,
-  image11:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636397/pexels-esmat-sediqi-227884109-25600494_csq07q.jpg`,
-  image12:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636397/pexels-farrow-photography-2153739185-33062143_zygy9y.jpg`,
-  image13:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636396/pexels-zeusdcreator-17902867_g3r4ys.jpg`,
-  image14:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636395/pexels-bilbaojl-4231781_cfqyut.jpg`,
-  imageLogo:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636393/sostilogo_edx57f.png`
+  image1:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784667515/pexels-shvetsa-5029923_1_s2w1ie.jpg`,
+  image2:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784667514/pexels-alfomedeiros-11534117_1_tzvvhc.jpg`,
+  image3:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784667515/pexels-rdne-6646882_1_devld5.jpg`,
+  image4:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784667515/pexels-shvetsa-5029853_1_gty5ca.jpg`,
+
+  image5:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784667514/pexels-esmat-sediqi-227884109-25600494_1_yiqjmq.jpg`,
+  image6:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784667513/pexels-frostee-lens-ug-2150016714-35744764_1_gpakfk.jpg`,
+  image7:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784667514/pexels-mike-mijares-78163062-33651991_1_sjn3ro.jpg`,
+  image8:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784667512/pexels-farrow-photography-2153739185-33062143_1_fgyvsb.jpg`,
+  image9:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784667514/pexels-bilbaojl-4231781_1_d93d5t.jpg`,
+  image10:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784667514/pexels-alfomedeiros-11534117_1_tzvvhc.jpg`,
+  image11:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784667514/pexels-lagosfoodbank-8054617_1_j8gsox.jpg`,
+  image12:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784667515/pexels-najim-kurfi-483155737-17916511_1_k7fx0a.jpg`,
+  image13:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784667516/pexels-balazsimon-6873614_1_x1yvul.jpg`,
+  image14:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784667516/pexels-zeusdcreator-17902867_1_elywyi.jpg`,
+  imageLogo:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784667516/sostilogo_l1ryss.png`
 }
 export const sliderImages = [
     {   url:images.image4,
