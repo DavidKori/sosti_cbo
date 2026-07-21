@@ -30,7 +30,7 @@ const About = ()=> {
                     by our shared belief that young people can drive change.
                 </p>
                 <Slider images={sliderImages}
-                width={windowWidth > 768 ? '60%' : '90%'}
+                width={windowWidth > 768 ? '60%' : '100%'}
                 borderRadius={true}
                 justifySelf='center'
                 />
