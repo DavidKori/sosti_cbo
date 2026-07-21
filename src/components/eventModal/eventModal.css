@@ -43,14 +43,15 @@
  .organisation p.value{
     margin:6.25px 0;
     font-family:var(--primary-button-font-family);
-    font-size:1.2rem;
+    font-size:var(--small-h2);
     font-weight: bold;
     line-height:26px;
     color: var(--primary-color);
 }
  .organisation .icon{display:inline-block}
  .organisation .icon img{
-    width:20px;margin:5px 5px 5px 0
+    width:20px;
+    margin:5px 5px 5px 0
 }
 
 .row {
@@ -60,19 +61,6 @@
 }
 
 
-@media (min-width:768px){
-    .container,
-    .wp-block-image.size-full figcaption{width:750px}
-}
-@media (min-width:992px){
-    .container,
-    .wp-block-image.size-full figcaption{width:970px}
-
-}
-@media (min-width:1200px){
-    .container,
-    .wp-block-image.size-full figcaption{width:1170px}
-}
 .row{margin-left:-15px;margin-right:-15px}
 
 .col-sm-4,
@@ -99,12 +87,63 @@
 @media (min-width:768px){
     .col,.col-sm-12,
     .col-sm-4,
-    .col-sm-6{float:left}
+    .col-sm-6{float:left;}
 
     .col-sm-12{width:100%}
 
     .col-sm-6{width:50%}
 
     .col-sm-4{width:33.33333333%}
+    .container,
+    .wp-block-image.size-full figcaption{width:750px}
+
  }
 
+@media (min-width:992px){
+    .container,
+    .wp-block-image.size-full figcaption{width:970px}
+
+}
+@media (min-width:1200px){
+    .container,
+    .wp-block-image.size-full figcaption{width:1170px}
+}
+
+@media screen and (max-width:768px) {
+    .organisation > h2 {
+        font-size: var(--medium-h2);
+    }
+}
+
+@media screen and (max-width:508px) {
+    .organisation > h2 {
+        font-size: var(--small-h2);
+    }
+    .organisation > p {
+        font-size: var(--small-p);
+    }
+     .col,
+    .col-sm-4,
+    .col-sm-6{
+        float:left; 
+        flex-wrap: wrap; 
+        display: flex; width: 100%; 
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding-left: 0;
+        padding-right: 0;
+        float: none;
+        align-items: center;
+    }
+    .row {
+        
+        width: 99%;
+        margin: auto;
+    }
+    .icon {
+        display: inline;
+    }
+    .col-sm-12 {
+        flex-direction: row !important;
+    }
+}

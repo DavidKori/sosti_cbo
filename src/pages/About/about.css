@@ -28,14 +28,13 @@
 }
 
 .button-block {
-    height: 60px;
     border: 2px solid var(--primary-color);
     background: var(--primary-button-color);
     color: var(--primary-color);
     max-width: 300px;
     font-family: var(--primary-font-family);
     font-weight: bold;
-    font-size: calc(var(--title) * .8);
+    font-size: calc(var(--title) * .7);
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -43,10 +42,15 @@
     margin-bottom: 20px;
     margin-top: 20px;
     transition: all .3s ease;
+    scrollbar-width: none;
+    height: 70px;
+    overflow-y: hidden ;
 }
 .button-block > a {
     color: var(--primary-color);
     transition: all .3s ease;
+
+
 }
 
 .button-block:hover {
@@ -70,4 +74,33 @@ left: 2%;
 
 .block-heading > a {
     color: var(--primary-color);
+}
+
+@media screen and (max-width:768px) {
+    .content > h2 {
+        font-size: var(--medium-h2);
+    }
+    .content > p {
+        font-size: var(--small-p);
+    }
+    .block-column > h5 {
+        padding: 10px;
+        overflow-y: visible !important;
+        scrollbar-width: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    ul.block-list  {
+        padding-left: 0px;
+        font-size: var(--small-p);
+        list-style-type: disc;
+    }
+    li::marker {
+        visibility: visible !important;
+        color: var(--primary-color);
+    }
+    ul.block-list > li::before {
+        content: "- ";
+    }
 }

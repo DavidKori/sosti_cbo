@@ -5,6 +5,7 @@ import { usePage } from '../../context/pageContext';
 import { currentPage } from '../../context/pageContext';
 import { sliderImages } from '../../utils/appData';
 import { Link } from 'react-router-dom';
+import { images } from '../../utils/appData';
 const About = ()=> {
     const navigate = useNavigate();
     const {pageName, setPageName} = usePage();
@@ -120,7 +121,7 @@ const About = ()=> {
                         <h5 className="block-heading">Powered by:</h5>
                         <figure className="block-image size-medium" onClick={()=>{navigate('/home');setPageName(currentPage())}}>
                             <img decoding="async" 
-                            src="../../src/assets/images/sostilogo.png" 
+                            src={images.imageLogo} 
                             alt="" className="image-242" />
                         </figure>
                     </div>

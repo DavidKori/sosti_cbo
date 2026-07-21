@@ -7,7 +7,7 @@
     --secondary-color:white;
     --tertiary-color:rgb(196, 193, 193);
     --primary-background:rgb(51, 49, 49);
-    --primary-font-family:BrauerNeue;
+    --primary-font-family:"Brauer Neue", sans-serif;
     --primary-button-font-family:BrauerNeueBlack;
     --danger:rgb(180, 47, 23);
     --gold:gold;
@@ -18,10 +18,25 @@
     --pale-text:#8f8787;
     --hero-index:10;
     --highlight-color:rgba(157, 241, 0, 0.507);
+    --medium-h2:1.5rem;
+    --small-h2:1.2rem;
+    --small-p:.9rem;
 }
 .dark{
 
 }
+@font-face {
+  font-family: "Brauer Neue";
+  src: url("/fonts/BrauerNeue-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Brauer Neue";
+  src: url("/fonts/BrauerNeue-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
 
 #root {
     margin: 0px;

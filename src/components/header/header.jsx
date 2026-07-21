@@ -6,6 +6,7 @@ import {FiPhone,FiPlus,FiInstagram,FiFacebook,FiTwitter,FiLinkedin,FiX,FiMenu} f
 import Sidebar from '../sidebar/sidebar';
 import { currentPage } from '../../context/pageContext';
 import './header.css';
+import { images } from '../../utils/appData';
 
 const Header = ({
     phoneNumber,
@@ -45,9 +46,9 @@ const Header = ({
 					</a>
 				</div>
 				<div className="header-left" onClick={() => setPageName(currentPage)}> {/*this line may break the page header layout*/}
-					<div className="logo">
+                <div className="logo" >
 						<Link to="/home" className="logo-link" >
-							<h1>SOSTI</h1>
+							<h1 style={{backgroundImage:`url(${images.image4})`}}>SOSTI</h1>
 						</Link>
 					</div>
 					<div className="translations">
@@ -109,12 +110,12 @@ const Header = ({
 					</div>
 				</div> */}
                 {/*showContact &&*/} {phoneNumber &&
-                    <div className="add-organisation">
-                        <a href={`tel:${phoneNumber}`} className="button">
+                    <a href={`tel:${phoneNumber}`} className="add-organisation">
+                        <div  className="button">
                             Reach Out
                             <i className="fas fa-plus"><FiPhone/></i>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 }
                 
 			</div>

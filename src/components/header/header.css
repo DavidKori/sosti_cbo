@@ -1,3 +1,4 @@
+
 .page-title{
     padding:50px 0 100px;
     background-color:var(--primary-color);
@@ -161,23 +162,22 @@
     scrollbar-width: none;
     
 }
-.add-organisation > a.button {
+.add-organisation > div.button {
     position: relative;
     transition: all .3s ease;
+    display: inline;
 
 }
 
-.add-organisation > a.button > .fa-plus{
+.add-organisation > div.button > .fa-plus{
     position: absolute;
     transform: rotate(90deg);
     margin-left: 5px;
     left: -20px;
-    top: -15px;
+    top: -16px;
 }
-.add-organisation > a.button:hover {
+.add-organisation > div.button:hover {
     color: var(--tertiary-color) !important;
-
-
 }
 .add-organisation:hover {
     cursor: pointer;
@@ -237,7 +237,7 @@
     .site-head .site-head-inner{
         flex-wrap:wrap
     }
-        .add-organisation > a.button > .fa-plus{
+        .add-organisation > div.button > .fa-plus{
     top: -10px;
 }
 }
@@ -247,6 +247,7 @@
         width:90%
     }
     
+    
 }
 @media only screen and (max-width:767px){
     .site-head .site-head-inner .logo h1{
@@ -254,6 +255,10 @@
         height:60px;
         font-size: calc(10/100 * 150px);
 
+    }
+    .page-title .container h1{
+
+        padding: 10px;
     }
     .container {
         width: 100%;

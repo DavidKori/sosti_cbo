@@ -48,7 +48,7 @@ const EventModal =({
 
 		<div className="row">
             <div className="col-sm-4 col-xs-6">
-                <p className="label">County(ies)</p>
+                <p className="label">County</p>
                 <p className="value">
                    {county}			
                 </p>

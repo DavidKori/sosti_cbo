@@ -7,8 +7,8 @@ const CountyTooltip = ({ tooltip }) => {
     <div
       style={{
         position:"fixed",
-        top: tooltip.y + 15,
-        left: tooltip.x + 15,
+        top: tooltip.y,
+        left: tooltip.x ,
 
         backgroundColor:"#f3c600",
 

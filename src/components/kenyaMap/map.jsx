@@ -46,14 +46,34 @@ const KenyaMap = () => {
                   fill={getCountyColor(county.projects)}
                   stroke="var(--pale-black)"
                   strokeWidth={0.7}
-                  onMouseEnter={(e) =>
+                  onMouseEnter={(e) => {
+                    const tooltipWidth = 250; // your tooltip width estimate
+                    const tooltipHeight = 150;
+
+                    const spaceRight = window.innerWidth - e.clientX;
+                    const spaceBottom = window.innerHeight - e.clientY;
+
                     setTooltip({
-                      x: e.clientX,
-                      y: e.clientY,
+                      x: spaceRight < tooltipWidth 
+                        ? e.clientX - tooltipWidth - 15 
+                        : e.clientX + 15,
+
+                      y: spaceBottom < tooltipHeight
+                        ? e.clientY - tooltipHeight - 15
+                        : e.clientY + 15,
+
                       county: countyName,
                       ...county,
-                    })
-                  }
+                    });
+                  }}
+                  // onMouseEnter={(e) =>
+                  //   setTooltip({
+                  //     x: e.clientX,
+                  //     y: e.clientY,
+                  //     county: countyName,
+                  //     ...county,
+                  //   })
+                  // }
                   onMouseMove={(e) =>
                     setTooltip((prev) => ({
                       ...prev,

@@ -1,27 +1,34 @@
 // import { email } from "zod";
 import { useNavigate } from "react-router-dom";
-import image1 from '../assets/images/pexels-alfomedeiros-11534117.jpg'
-import image2 from '../assets/images/pexels-shvetsa-5029853.jpg'
-import image3 from '../assets/images/pexels-shvetsa-5029923.jpg'
-import image4 from '../assets/images/pexels-mike-mijares-78163062-33651991.jpg'
-import image5 from '../assets/images/pexels-frostee-lens-ug-2150016714-35744764.jpg'
-import image6 from '../assets/images/pexels-farrow-photography-2153739185-33062143.jpg'
-import image7 from '../assets/images/pexels-rdne-6646882.jpg'
-import image8 from '../assets/images/pexels-esmat-sediqi-227884109-25600494.jpg'
-import image9 from '../assets/images/pexels-balazsimon-6873614.jpg'
-import image10 from '../assets/images/pexels-bilbaojl-4231781.jpg'
 
+export const images = {
+  image1:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636403/pexels-rdne-6646882_wckg8v.jpg`,
+  image2:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636395/pexels-alfomedeiros-11534117_s7tbkt.jpg`,
+  image3:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636400/pexels-shvetsa-5029853_tgtdjj.jpg`,
+  image4:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636403/pexels-shvetsa-5029923_kaj0ot.jpg`,
+  image5:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636402/pexels-seyhmuskino-30582345_mkctr9.jpg`,
+  image6:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636400/pexels-lagosfoodbank-8054617_kecf0p.jpg`,
+  image7:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636397/pexels-balazsimon-6873614_jy9dvy.jpg`,
+  image8:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636398/pexels-najim-kurfi-483155737-17916511_twprzp.jpg`,
+  image9:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636398/pexels-mike-mijares-78163062-33651991_x7zfhc.jpg`,
+  image10:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636398/pexels-frostee-lens-ug-2150016714-35744764_cq172s.jpg`,
+  image11:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636397/pexels-esmat-sediqi-227884109-25600494_csq07q.jpg`,
+  image12:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636397/pexels-farrow-photography-2153739185-33062143_zygy9y.jpg`,
+  image13:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636396/pexels-zeusdcreator-17902867_g3r4ys.jpg`,
+  image14:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636395/pexels-bilbaojl-4231781_cfqyut.jpg`,
+  imageLogo:`https://res.cloudinary.com/dxritu7i3/image/upload/v1784636393/sostilogo_edx57f.png`
+}
 export const sliderImages = [
-    {   url:image1,
+    {   url:images.image4,
         title:'victor',
         description:'photo1'
     },
-    {   url:image2,
+    {   url:images.image2,
         title:'Tree Planting',
         description:'photo2'
 
     },
-    {   url:image3,
+    {   url:images.image3,
         title:'Togetherness',
         description:'photo3'
 
@@ -42,7 +49,7 @@ export const blogData = [
     excerpt:
       "Young people are driving meaningful change in their communities by creating innovative solutions to local challenges. This article explores inspiring success stories and lessons learned from grassroots initiatives.",
     blogImgLink:
-      image5,
+      images.image5,
     postDate: "Mon, June 17, 2026",
     blogPostLink: "",
 
@@ -54,7 +61,7 @@ export const blogData = [
     excerpt:
       "Digital platforms have become powerful tools for advocacy, collaboration, and awareness. Discover how young leaders are using technology to influence policy and create lasting social impact.",
     blogImgLink:
-      image7,
+      images.image7,
     postDate: "Wed, July 2, 2026",
     blogPostLink: "",
   },
@@ -65,7 +72,7 @@ export const blogData = [
     excerpt:
       "Creating inclusive environments enables young people from diverse backgrounds to develop leadership skills, share ideas, and contribute confidently to community development initiatives.",
     blogImgLink:
-      image8,
+      images.image8,
     postDate: "Fri, August 14, 2026",
     blogPostLink: "",
   },
@@ -76,7 +83,7 @@ export const blogData = [
     excerpt:
       "Behind every successful community project are dedicated volunteers whose passion fuels progress. Read about the experiences and impact of volunteers making a difference every day.",
     blogImgLink:
-      image10,
+      images.image10,
     postDate: "Tue, September 8, 2026",
     blogPostLink: "",
   },
@@ -87,7 +94,7 @@ export const blogData = [
     excerpt:
       "Strong partnerships between organizations, volunteers, and local communities create sustainable solutions. Learn how collaboration strengthens projects and maximizes long-term impact.",
     blogImgLink:
-      image9,
+      images.image9,
     postDate: "Sat, October 3, 2026",
     blogPostLink: "",
   },
@@ -98,7 +105,7 @@ export const blogData = [
     excerpt:
       "Across different regions, young environmental advocates are launching initiatives that promote sustainability, conservation, and climate awareness while inspiring others to get involved.",
     blogImgLink:
-      image5,
+      images.image5,
     postDate: "Thu, November 19, 2026",
     blogPostLink: "",
   },
@@ -449,19 +456,19 @@ export const latestPost = () =>{
     onClick:()=>navigate('/blog'),
     postTitle:'Five Ways Technology is Transforming Youth Advocacy',
     postType:'Post', 
-    imgSrc:image4
+    imgSrc:images.image4
   },
   {
     onClick:()=>navigate('/blog'),
     postTitle:'Empowering Young People Through Community Innovation',
     postType:'Blog', 
-    imgSrc:image5
+    imgSrc:images.image5
   },
   {
     onClick:()=>navigate('/blog'),
     postTitle:'Building Inclusive Spaces for Future Leaders',
     postType:'Blog', 
-    imgSrc:image7
+    imgSrc:images.image7
   }
 ])
 }
