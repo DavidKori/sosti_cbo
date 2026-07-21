@@ -15,6 +15,7 @@
     color: var(--secondary-color);
     z-index: var(--hero-index);
     font-family: var(--primary-font-family);
+    font-weight: bold;
 }
 .hero > .recent-post {
     margin-top: 20px;
@@ -32,16 +33,29 @@
         justify-content: space-between;
     }
 }
-@media screen and (max-width:786px) {
-.recent-post {
-    gap: 20px;
-}
-
-}
 @media screen and (max-width:1440px) {
  .home-events {
     width: 92%;
     margin: auto;
 }
 }
+@media screen and (max-width:786px) {
+.recent-post {
+    gap: 20px;
+}
 
+}
+
+@media screen and (max-width:600px) {
+.hero > h1 {
+    line-height: 1.2;
+    text-align: left;
+    padding-left: 20px;
+}
+}
+@media screen and (max-width:300px) {
+.hero > h1 {
+    font-size: calc(var(--title) * .8);
+    
+}
+}

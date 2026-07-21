@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { useEffect, createContext, useContext, useState } from "react";
 
 const PageContext = createContext()
 
@@ -22,4 +22,17 @@ export function usePage () {
 
 export function currentPage () {
     return window.location.hash.split('/')[1];
+}
+
+export function useWindowWidth() {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return width;
 }

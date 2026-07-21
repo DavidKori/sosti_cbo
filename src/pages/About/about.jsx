@@ -6,9 +6,11 @@ import { currentPage } from '../../context/pageContext';
 import { sliderImages } from '../../utils/appData';
 import { Link } from 'react-router-dom';
 import { images } from '../../utils/appData';
+import { useWindowWidth } from '../../context/pageContext';
 const About = ()=> {
     const navigate = useNavigate();
     const {pageName, setPageName} = usePage();
+    const windowWidth = useWindowWidth();
 
     return (
     <>
@@ -28,7 +30,7 @@ const About = ()=> {
                     by our shared belief that young people can drive change.
                 </p>
                 <Slider images={sliderImages}
-                width='60%'
+                width={windowWidth > 768 ? '60%' : '90%'}
                 borderRadius={true}
                 justifySelf='center'
                 />
@@ -60,8 +62,8 @@ const About = ()=> {
                         </a>
                     </li>
                     <li>Visibility on our 
-                        <Link to={'/home'}><strong>map</strong></Link> and 
-                        <Link to={'/home'}><strong>directory</strong></Link>
+                        <Link to={'/home'} onClick={()=>setPageName('home')}><strong>map</strong></Link> and 
+                        <Link to={'/home'} onClick={()=>setPageName('home')}><strong>directory</strong></Link>
                     </li>
                 </ul>
 
